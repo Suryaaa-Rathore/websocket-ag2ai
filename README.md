@@ -2,7 +2,16 @@
 
 An interactive WebSocket-based UI and FastAPI backend for orchestrating agentic workflows using [AG2AI Autogen](https://github.com/ag2ai/ag2). This project demonstrates real-time, multi-agent collaboration for solving problems through a WebSocket-powered interface — ideal for tasks like data analysis, EDA, and more.
 
-![App UI Screenshot](./screenshot.png)
+![App UI Screenshot](./docs/screenshot.png)
+
+---
+
+## 📘 How to Use the WebSocket UI
+
+To learn how to interact with the UI step-by-step, check out the full guide:
+
+➡️ [Usage Guide (UI Walkthrough)](./docs/USAGE_GUIDE.md)
+
 
 ---
 
@@ -15,7 +24,6 @@ This repository includes:
 - A custom **orchestrator agent** (`agent_aligner`) that manages execution flow, ensuring orderly agent coordination.
 
 ---
-
 
 ## ✨ Features
 
@@ -35,6 +43,56 @@ This repository includes:
 - Real-time message streaming to frontend
 - Manual user input integration during live chat
 - Environment-based configuration via `.env`
+
+---
+
+## 🧩 Problem & Solution
+
+### ❌ The Problem We Faced
+
+While working with WebSocket-based agent systems using AG2AI/Autogen, we encountered several major bottlenecks that affected productivity and developer experience:
+
+- **Postman and raw WebSocket clients are not interactive**  
+  These tools make it hard to follow multi-agent conversations. They lack formatting, which slows down debugging and understanding the data flow.
+
+- **Reading agent messages is time-consuming**  
+  When working with multiple agents, reviewing each step (especially during prompt tuning or alignment) becomes tedious and error-prone.
+
+- **Lack of message formatting**  
+  JSON responses from agents are dumped as raw strings, making them hard to read and troubleshoot — especially when nested or streamed.
+
+- **Frontend development was not feasible**  
+  Building a fully custom UI in frameworks like React or Vue would add significant overhead and distract from core system development.
+
+- **No streamlined session management**  
+  Keeping track of WebSocket sessions and switching between different chats was a manual and error-prone task.
+
+---
+
+### ✅ The Solution We Implemented
+
+To overcome these challenges, we built a minimal yet powerful **interactive WebSocket UI**, paired with a **FastAPI backend**, enabling seamless development and debugging of agent workflows.
+
+Key benefits:
+
+- **Clean, interactive WebSocket communication**  
+  Live messages stream directly to the browser with proper formatting and role-based separation.
+
+- **Well-structured message display**  
+  All messages are styled in blocks and automatically formatted as JSON, making it easy to inspect agent responses.
+
+- **Faster prompt tuning & agent alignment**  
+  Developers can instantly see how agents respond, helping fine-tune prompts with clarity and speed.
+
+- **Quick session switching**  
+  Chat sessions can be created and reused easily, improving workflow efficiency during development and testing.
+
+- **Minimal development effort**  
+  A lightweight HTML/JS UI replaces the need for building a full-fledged frontend framework — saving time while still improving UX significantly.
+
+---
+
+This setup dramatically reduced the friction in debugging, testing, and managing agentic workflows — allowing us to focus on what matters: building smart and responsive agents.
 
 ---
 
