@@ -1,6 +1,6 @@
 # 🔌 AG2AI WebSocket Agentic Workflow UI & Backend
 
-An interactive WebSocket-based UI and FastAPI backend for orchestrating agentic workflows using [AG2AI Autogen](https://github.com/microsoft/autogen). This project demonstrates real-time, multi-agent collaboration for solving problems through a WebSocket-powered interface — ideal for tasks like data analysis, EDA, and more.
+An interactive WebSocket-based UI and FastAPI backend for orchestrating agentic workflows using [AG2AI Autogen](https://github.com/ag2ai/ag2). This project demonstrates real-time, multi-agent collaboration for solving problems through a WebSocket-powered interface — ideal for tasks like data analysis, EDA, and more.
 
 ![App UI Screenshot](./screenshot.png)
 
