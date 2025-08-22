@@ -2,6 +2,8 @@
 
 An interactive WebSocket-based UI and FastAPI backend for orchestrating agentic workflows using [AG2AI Autogen](https://github.com/microsoft/autogen). This project demonstrates real-time, multi-agent collaboration for solving problems through a WebSocket-powered interface — ideal for tasks like data analysis, EDA, and more.
 
+![App UI Screenshot](./screenshot.png)
+
 ---
 
 ## 📦 Overview
@@ -13,6 +15,7 @@ This repository includes:
 - A custom **orchestrator agent** (`agent_aligner`) that manages execution flow, ensuring orderly agent coordination.
 
 ---
+
 
 ## ✨ Features
 
